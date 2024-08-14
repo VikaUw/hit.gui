@@ -6,11 +6,11 @@ game:GetService('RunService').RenderStepped:connect(function()
     for i,v in next, game:GetService('Players'):GetPlayers() do
       if v.Name ~= game:GetService('Players').LocalPlayer.Name then
         pcall(function()
-          v.Character.HumanoidRootPart.Size = Vector3.new(_G.Size,_G.Size,_G.Size)
-          v.Character.HumanoidRootPart.Transparency = 0.9
-          v.Character.HumanoidRootPart.BrickColor = BrickColor.new("White")
-          v.Character.HumanoidRootPart.Material = "Neon"
-          v.Character.HumanoidRootPart.CanCollide = false
+           v.Character.Head.Size = Vector3.new(_G.Size,_G.Size,_G.Size)
+           v.Character.Head.Transparency = 0.9
+           v.Character.Head.BrickColor = BrickColor.new("White")
+           v.Character.Head.Material = "Neon"
+           v.Character.Head.CanCollide = false
         end)
       end
     end
